@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 const LoginComponent = ()=>{
 
     const navigate = useNavigate()
-    
+
     const userData = {
         email : useRef(null),
         password : useRef(null),
@@ -38,7 +38,7 @@ const LoginComponent = ()=>{
             console.log(res.data)
             alert("user Logged In.")
             !token && localStorage.setItem("token",res.data.data.token)
-            navigate('./dashboard')
+            navigate('/dashboard')
         })
         .catch(err=>{
             console.log(err)
