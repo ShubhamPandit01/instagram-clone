@@ -50,7 +50,7 @@ const RegisterComponent = ()=>{
         .then(res=>{
             console.log(res.data)
             alert("user registered sucessfully.")
-            !token && localStorage.setItem("token",res.data.data.token)
+            localStorage.setItem("token",res.data.data.token)
         })
         .catch(err=>{
             console.log(err)

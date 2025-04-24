@@ -11,7 +11,7 @@ function App() {
     <div>
         <Routes>
             <Route path="/" element={<RegisterComponent/>}/>
-            <Route path="/Login" element={<LoginComponent/>}/>
+            <Route path="/login" element={<LoginComponent/>}/>
             <Route path="/dashboard" element={<Dashboard/>}/>
 
         </Routes>
